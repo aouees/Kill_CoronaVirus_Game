@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/road_hd_bac" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highsecortext"
+        android:text="We'll kill"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#C21313"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:id="@+id/kill"/>
+    <TextView
+        android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/kill"
+    android:text="CoronaVirus"
+    android:textAlignment="center"
+    android:textAllCaps="false"
+    android:textColor="#09853C"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    android:id="@+id/corona"/>
+
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp"
+        android:text="let's Go"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/cor_ima"
+        />
+
+    <TextView
+        android:id="@+id/highsecortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd  ="true"
+        android:layout_margin="20dp"
+        android:text="High Score"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_volume_up_black_24dp"
+        android:id="@+id/controlV"
+       />
+
+    <ImageView
+        android:id="@+id/cor_ima"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/corona"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_corona" />
+</RelativeLayout>
